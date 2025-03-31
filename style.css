@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f2edd5;
+  background: #ffffff;
 }
 
 a {
@@ -145,8 +145,8 @@ section {
   width: 100%;
   padding: 5px;
   border-radius: 10px;
-  border: 1px solid #ffffff;
-  background-color: #ffffff;
+  border: 1px solid #e8bd3c;
+  background-color: #f2ca50;
   -webkit-animation: shadow-drop-2-center 0.4s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -159,11 +159,11 @@ table {
 }
 
 td {
-  border: 3px solid #ffffff;
+  border: 3px solid #e8bd3c;
   border-bottom: none;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: #f2dc99;
+  background-color: #ffffff;
   width: 20%;
   color: #000000;
   padding: 5px;
@@ -174,11 +174,11 @@ td {
 }
 
 th {
-  border: 3px solid #ffffff;
+  border: 3px solid #e8bd3c;
   border-top: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: #f2dc99;
+  background-color: #ffffff;
   color: #000000;
   text-align: center;
   justify-content: center;
@@ -241,9 +241,23 @@ th {
 }
 
 .fondoPadres {
-  background-color: #f8e4a7;
+  background: linear-gradient(
+    60deg,
+    #bf7839,
+    /* Dorado oscuro */ #bf8c4e,
+    /* Bronce */ #d9af62,
+    /* Oro medio */ #f2dc99,
+    /* Oro claro */ #f2d680,
+    /* Brillo dorado */ #f2dc99,
+    /* Oro claro */ #d9af62,
+    /* Oro medio */ #bf8c4e,
+    /* Bronce */ #bf7839 /* Dorado oscuro */
+  );
+  background-size: 400% 400%;
+  animation: goldShine 6s infinite linear;
   width: 100%;
   padding: 5%;
+  /*box-shadow: #bf7e04cb 0px 0px 25px 0px inset;*/
 }
 
 .padres {
@@ -256,6 +270,7 @@ th {
   view-timeline-axis: block;
   animation-timeline: --container7;
   animation-name: moveC;
+  box-shadow: #000000b6 0px 0px 15px 0px;
 
   h1 {
     font-size: 45px;
@@ -293,11 +308,9 @@ th {
 .carousel {
   margin-top: 30px;
   margin-bottom: 10%;
-}
-
-.botonesVestimenta button {
-  margin-bottom: 10px;
-  margin-top: 10px;
+  -webkit-animation: shadow-drop-2-center 0.4s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .cronograma {
@@ -403,7 +416,7 @@ th {
 
 .text-box {
   padding: 10px 20px;
-  background: #ffffff;
+  background: #f2dc99;
   position: relative;
   border-radius: 10px;
   font-size: 15px;
@@ -425,7 +438,7 @@ h5 {
   position: absolute;
   width: 6px;
   height: 100%;
-  background: #ffffff;
+  background: #f2dc99;
   left: 15%;
   top: 0;
 
@@ -473,7 +486,7 @@ h5 {
   z-index: 1;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-right: 15px solid #ffffff;
+  border-right: 15px solid #f2dc99;
   left: -15px;
 }
 
@@ -481,7 +494,19 @@ h5 {
   position: relative;
   text-align: center;
   padding: 5%;
-  background-color: #f2f2f2;
+  background: linear-gradient(
+    60deg,
+    #bf7839,
+    /* Dorado oscuro */ #bf8c4e,
+    /* Bronce */ #d9af62,
+    /* Oro medio */ #f2dc99,
+    /* Oro claro */ #f2d680,
+    /* Brillo dorado */ #f2dc99,
+    /* Oro claro */ #d9af62,
+    /* Oro medio */ #bf8c4e,
+    /* Bronce */ #bf7839 /* Dorado oscuro */
+  );
+  background-size: 400% 400%;
   margin-top: 10%;
   margin-bottom: 10%;
   width: 100%;
@@ -504,24 +529,6 @@ h5 {
     opacity: 1;
     transform: translateX(0px);
   }
-}
-
-.colores {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8%;
-  margin-top: 20px;
-}
-
-.color {
-  margin-top: 3%;
-  margin-bottom: 3%;
-  border: 1px solid #9e9e9e;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
 }
 
 .tituloV {
@@ -611,11 +618,24 @@ h6 {
 
 .card {
   margin: 0 auto;
-  background-color: #f2dc99;
+  background: linear-gradient(
+    60deg,
+    #bf7839,
+    /* Dorado oscuro */ #bf8c4e,
+    /* Bronce */ #d9af62,
+    /* Oro medio */ #f2dc99,
+    /* Oro claro */ #f2d680,
+    /* Brillo dorado */ #f2dc99,
+    /* Oro claro */ #d9af62,
+    /* Oro medio */ #bf8c4e,
+    /* Bronce */ #bf7839 /* Dorado oscuro */
+  );
+  background-size: 400% 400%;
+  animation: goldShine 6s infinite linear;
   width: 0%;
   height: 250px;
   margin-bottom: 10%;
-  border: 3px ridge #77b9f2;
+  border: 3px ridge #f2ca50;
 
   -webkit-animation: shadow-drop-2-center 0.4s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -649,9 +669,22 @@ h6 {
 .mesa {
   position: relative;
   text-align: center;
-  background-color: #f2f2f2;
+  background: linear-gradient(
+    60deg,
+    #bf7839,
+    /* Dorado oscuro */ #bf8c4e,
+    /* Bronce */ #d9af62,
+    /* Oro medio */ #f2dc99,
+    /* Oro claro */ #f2d680,
+    /* Brillo dorado */ #f2dc99,
+    /* Oro claro */ #d9af62,
+    /* Oro medio */ #bf8c4e,
+    /* Bronce */ #bf7839 /* Dorado oscuro */
+  );
+  background-size: 400% 400%;
   padding: 5%;
   margin-top: 15%;
+  margin-bottom: 15%;
   view-timeline-name: --container7;
   view-timeline-axis: block;
   animation-timeline: --container7;
@@ -674,8 +707,8 @@ h6 {
 
 .frase {
   margin-bottom: 8%;
-  margin-top: 40px;
-  font-size: 15px;
+  margin-top: 20px;
+  font-size: 20px;
   font-family: "Times New Roman", Times, serif;
 }
 
